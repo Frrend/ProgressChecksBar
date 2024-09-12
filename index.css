@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    color: #364c3f;}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #5ea19d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-square {
+    width: 1000px;
+    height: 1000px;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    place-items: center;
+}
+
+.outer-square > * {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+.outer-square .back-square {
+    width: 680px;
+    height: 250px;
+    border-radius: 55px;
+    box-shadow: 0 0 3px rgba(58, 58, 58, 0.3);
+    z-index: 1;
+    background-color: #9abcba;
+}
+
+.outer-square .content-square {
+    width: 800px;
+    height: 200px;
+    border-radius: 55px;
+    flex-direction: column;
+    box-shadow: 0 0 3px rgba(58, 58, 58, 0.3);
+    z-index: 2;
+    background-color: #b6cfc7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-marks {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.check-marks div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #364c3f;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.progress-bar {
+    width: 90%;
+    height: 10px;
+    margin-top: 30px;
+    border-radius: 30px;
+    background-color: #364c3f;
+}
